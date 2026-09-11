@@ -59,10 +59,12 @@ Python, pandas, yfinance, Prophet, Streamlit, matplotlib
 
 ## Running locally
 
+```
 git clone https://github.com/puchalskamarlena/stock-price-forecasting-app.git
 cd stock-price-forecasting-app
 pip install -r requirements.txt
 streamlit run app.py
+```
 
 ## Author
 
