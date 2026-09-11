@@ -9,7 +9,7 @@ st.title("Stock Price Analytics & Forecasting")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data\stock_data.csv", parse_dates=["Date"])
+    df = pd.read_csv("data/stock_data.csv", parse_dates=["Date"])
     df["Date"] = pd.to_datetime(df["Date"], utc=True).dt.tz_localize(None)
     df =df.dropna().reset_index(drop=True)
     return df
